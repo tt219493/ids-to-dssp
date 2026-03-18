@@ -4,6 +4,7 @@
 ### 
 Simple Python package to provide labeled secondary structure and protein sequence data when given a file containing IDs from the Protein Data Bank (PDB).
 
+Allows for creation of large datasets for analysis and modeling using DSSP version 4 which labels poly-proline II helix (as 'P') which was not present in previous versions. 
 ___
 To retrieve secondary structure from the file (TSV or Parquet) containing IDs, it gets unique IDs from the file and uses those IDs to make GET calls to 
 [`https://pdb-redo.eu/dssp/db/{pdb_id}/mmcif`](https://pdb-redo.eu/dssp/)  
